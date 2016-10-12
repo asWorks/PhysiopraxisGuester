@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MySQL_Test_EF6;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MySQL_Test
 {
@@ -23,6 +12,25 @@ namespace MySQL_Test
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+            using (var db = new GuesterModel())
+            {
+                var aerzte = db.arzts;
+                arzt arzt = aerzte.Where(n => n.NACHNAME == "Bauer").First();
+                textBlock.Text = arzt.PLZ;
+                textBlock1.Text = arzt.VORNAME;
+                textBox.Text = arzt.VORNAME;
+                arzt.VORNAME = "Woolfgaang";
+                var saveChanges = db.SaveChanges();
+
+                // MessageBox.Show(arzt.);
+                // MessageBox.Show(aerzte.Count().ToString());
+            }
+
         }
     }
 }

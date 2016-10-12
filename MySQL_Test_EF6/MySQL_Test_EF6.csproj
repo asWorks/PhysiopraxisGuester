@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15216FF7-372F-4A66-9DC9-1ACD8727B107}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySQL_Test_EF6</RootNamespace>
+    <AssemblyName>MySQL_Test_EF6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adrgenehmigung.cs" />
+    <Compile Include="allepreise.cs" />
+    <Compile Include="arzt.cs" />
+    <Compile Include="berhist.cs" />
+    <Compile Include="bericht1.cs" />
+    <Compile Include="bericht2.cs" />
+    <Compile Include="bericht2ktl.cs" />
+    <Compile Include="berlock.cs" />
+    <Compile Include="doku1.cs" />
+    <Compile Include="dta301.cs" />
+    <Compile Include="dtafall.cs" />
+    <Compile Include="dtatypen.cs" />
+    <Compile Include="edifact.cs" />
+    <Compile Include="eingeloggt.cs" />
+    <Compile Include="ertarif.cs" />
+    <Compile Include="ertarif1.cs" />
+    <Compile Include="ertarif10.cs" />
+    <Compile Include="ertarif11.cs" />
+    <Compile Include="ertarif12.cs" />
+    <Compile Include="ertarif2.cs" />
+    <Compile Include="ertarif3.cs" />
+    <Compile Include="ertarif4.cs" />
+    <Compile Include="ertarif5.cs" />
+    <Compile Include="ertarif6.cs" />
+    <Compile Include="ertarif7.cs" />
+    <Compile Include="ertarif8.cs" />
+    <Compile Include="ertarif9.cs" />
+    <Compile Include="faktura.cs" />
+    <Compile Include="feiertage.cs" />
+    <Compile Include="fertige.cs" />
+    <Compile Include="flexkc.cs" />
+    <Compile Include="flexlock.cs" />
+    <Compile Include="GuesterModel.cs" />
+    <Compile Include="hgroup.cs" />
+    <Compile Include="hmrcheck.cs" />
+    <Compile Include="htitel.cs" />
+    <Compile Include="icd10.cs" />
+    <Compile Include="inidatei.cs" />
+    <Compile Include="jahresabschluss.cs" />
+    <Compile Include="kasse.cs" />
+    <Compile Include="kass_adr.cs" />
+    <Compile Include="kb_2016.cs" />
+    <Compile Include="kb_bey.cs" />
+    <Compile Include="kgtarif.cs" />
+    <Compile Include="kgtarif1.cs" />
+    <Compile Include="kgtarif10.cs" />
+    <Compile Include="kgtarif11.cs" />
+    <Compile Include="kgtarif12.cs" />
+    <Compile Include="kgtarif2.cs" />
+    <Compile Include="kgtarif3.cs" />
+    <Compile Include="kgtarif4.cs" />
+    <Compile Include="kgtarif5.cs" />
+    <Compile Include="kgtarif6.cs" />
+    <Compile Include="kgtarif7.cs" />
+    <Compile Include="kgtarif8.cs" />
+    <Compile Include="kgtarif9.cs" />
+    <Compile Include="kollegen2.cs" />
+    <Compile Include="ktraeger.cs" />
+    <Compile Include="kuerzel.cs" />
+    <Compile Include="lotarif.cs" />
+    <Compile Include="lotarif1.cs" />
+    <Compile Include="lotarif10.cs" />
+    <Compile Include="lotarif11.cs" />
+    <Compile Include="lotarif12.cs" />
+    <Compile Include="lotarif2.cs" />
+    <Compile Include="lotarif3.cs" />
+    <Compile Include="lotarif4.cs" />
+    <Compile Include="lotarif5.cs" />
+    <Compile Include="lotarif6.cs" />
+    <Compile Include="lotarif7.cs" />
+    <Compile Include="lotarif8.cs" />
+    <Compile Include="lotarif9.cs" />
+    <Compile Include="lza.cs" />
+    <Compile Include="masntex2.cs" />
+    <Compile Include="masntext.cs" />
+    <Compile Include="matarif.cs" />
+    <Compile Include="matarif1.cs" />
+    <Compile Include="matarif10.cs" />
+    <Compile Include="matarif11.cs" />
+    <Compile Include="matarif12.cs" />
+    <Compile Include="matarif2.cs" />
+    <Compile Include="matarif3.cs" />
+    <Compile Include="matarif4.cs" />
+    <Compile Include="matarif5.cs" />
+    <Compile Include="matarif6.cs" />
+    <Compile Include="matarif7.cs" />
+    <Compile Include="matarif8.cs" />
+    <Compile Include="matarif9.cs" />
+    <Compile Include="nummern.cs" />
+    <Compile Include="pat5.cs" />
+    <Compile Include="patbild.cs" />
+    <Compile Include="pimail.cs" />
+    <Compile Include="pimailgroup.cs" />
+    <Compile Include="poskuerzel.cs" />
+    <Compile Include="potarif1.cs" />
+    <Compile Include="potarif10.cs" />
+    <Compile Include="potarif11.cs" />
+    <Compile Include="potarif12.cs" />
+    <Compile Include="potarif2.cs" />
+    <Compile Include="potarif3.cs" />
+    <Compile Include="potarif4.cs" />
+    <Compile Include="potarif5.cs" />
+    <Compile Include="potarif6.cs" />
+    <Compile Include="potarif7.cs" />
+    <Compile Include="potarif8.cs" />
+    <Compile Include="potarif9.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rehalogin.cs" />
+    <Compile Include="restricttemplate.cs" />
+    <Compile Include="rgaffaktura.cs" />
+    <Compile Include="rhtarif.cs" />
+    <Compile Include="rhtarif1.cs" />
+    <Compile Include="rhtarif10.cs" />
+    <Compile Include="rhtarif11.cs" />
+    <Compile Include="rhtarif12.cs" />
+    <Compile Include="rhtarif2.cs" />
+    <Compile Include="rhtarif3.cs" />
+    <Compile Include="rhtarif4.cs" />
+    <Compile Include="rhtarif5.cs" />
+    <Compile Include="rhtarif6.cs" />
+    <Compile Include="rhtarif7.cs" />
+    <Compile Include="rhtarif8.cs" />
+    <Compile Include="rhtarif9.cs" />
+    <Compile Include="rliste.cs" />
+    <Compile Include="rtadoku.cs" />
+    <Compile Include="tbar.cs" />
+    <Compile Include="tber.cs" />
+    <Compile Include="tbkg.cs" />
+    <Compile Include="tblo.cs" />
+    <Compile Include="tbma.cs" />
+    <Compile Include="tbpo.cs" />
+    <Compile Include="tbrh.cs" />
+    <Compile Include="todo.cs" />
+    <Compile Include="urlaub.cs" />
+    <Compile Include="urlaub2010.cs" />
+    <Compile Include="urlaub2014.cs" />
+    <Compile Include="verkartikel.cs" />
+    <Compile Include="verkfaktura.cs" />
+    <Compile Include="verklieferant.cs" />
+    <Compile Include="verkliste.cs" />
+    <Compile Include="verordn.cs" />
+    <Compile Include="vlog.cs" />
+    <Compile Include="volle.cs" />
+    <Compile Include="vpreise.cs" />
+    <Compile Include="wecker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

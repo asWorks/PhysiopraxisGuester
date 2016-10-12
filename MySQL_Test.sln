@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL_Test", "MySQL_Test\MySQL_Test.csproj", "{6298C1E5-4478-4E4C-A44C-9E13991F4541}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL_Test_EF6", "MySQL_Test_EF6\MySQL_Test_EF6.csproj", "{15216FF7-372F-4A66-9DC9-1ACD8727B107}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6298C1E5-4478-4E4C-A44C-9E13991F4541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6298C1E5-4478-4E4C-A44C-9E13991F4541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6298C1E5-4478-4E4C-A44C-9E13991F4541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15216FF7-372F-4A66-9DC9-1ACD8727B107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15216FF7-372F-4A66-9DC9-1ACD8727B107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15216FF7-372F-4A66-9DC9-1ACD8727B107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15216FF7-372F-4A66-9DC9-1ACD8727B107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

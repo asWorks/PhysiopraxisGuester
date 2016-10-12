@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="MySQL_Test.Views.AerzteListeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MySQL_Test.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="620">
+  
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="460*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Visible" Margin="10,0,-10,0">
+            <DataGrid Height="450" Width="610" x:Name="arztDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="0,0,0,30" ItemsSource="{Binding Path=AerzteListe}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    
+                     <DataGridTextColumn x:Name="nACHNAMEColumn" Width="SizeToHeader" Header="NACHNAME" Binding="{Binding NACHNAME}"/>
+                     <DataGridTextColumn x:Name="vORNAMEColumn" Width="SizeToHeader" Header="VORNAME" Binding="{Binding VORNAME}"/>
+                     <DataGridTextColumn x:Name="tITELColumn" Width="SizeToHeader" Header="TITEL" Binding="{Binding TITEL}"/>
+                     <DataGridTextColumn x:Name="pLZColumn" Width="SizeToHeader" Header="PLZ" Binding="{Binding PLZ}"/>
+                     <DataGridTextColumn x:Name="oRTColumn" Width="SizeToHeader" Header="ORT" Binding="{Binding ORT}"/>
+                     <DataGridTextColumn x:Name="sTRASSEColumn" Width="SizeToHeader" Header="STRASSE" Binding="{Binding STRASSE}"/>
+                    <DataGridTextColumn x:Name="tELEFONColumn" Width="SizeToHeader" Header="TELEFON" Binding="{Binding TELEFON}"/>
+                    
+                    <DataGridTextColumn x:Name="aNREDEColumn" Width="SizeToHeader" Header="ANREDE" Binding="{Binding ANREDE}"/>
+                    <DataGridTextColumn x:Name="aRZTNUMColumn" Width="SizeToHeader" Header="ARZTNUM" Binding="{Binding ARZTNUM}"/>
+                   
+                    <DataGridTextColumn x:Name="bSNRColumn" Width="SizeToHeader" Header="BSNR" Binding="{Binding BSNR}"/>
+                    <DataGridTextColumn x:Name="eMAIL1Column" Width="SizeToHeader" Header="EMAIL 1" Binding="{Binding EMAIL1}"/>
+                    <DataGridTextColumn x:Name="eMAIL2Column" Width="SizeToHeader" Header="EMAIL 2" Binding="{Binding EMAIL2}"/>
+                    <DataGridTextColumn x:Name="fACHARZTColumn" Width="SizeToHeader" Header="FACHARZT" Binding="{Binding FACHARZT}"/>
+                    <DataGridTextColumn x:Name="fAXColumn" Width="SizeToHeader" Header="FAX" Binding="{Binding FAX}"/>
+                    <DataGridTextColumn x:Name="kLINIKColumn" Width="SizeToHeader" Header="KLINIK" Binding="{Binding KLINIK}"/>
+                    <DataGridTextColumn x:Name="mATCHCODEColumn" Width="SizeToHeader" Header="MATCHCODE" Binding="{Binding MATCHCODE}"/>
+                    <DataGridTextColumn x:Name="mTEXTColumn" Width="SizeToHeader" Header="MTEXT" Binding="{Binding MTEXT}"/>
+                   
+                   
+                   
+                   
+                    
+                   
+                   
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Button Name="BtnSave"  Content="Speichern" />
+            </StackPanel>
+
+        </Grid>
+  
+</UserControl>
